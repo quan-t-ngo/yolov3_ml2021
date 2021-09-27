@@ -59,13 +59,13 @@ from Train_Utils import (
 )
 
 
-keras_path = './keras_yolo3/'
+keras_yolo3_path = './keras_yolo3/'
 Image_Folder = './images/'
 YOLO_filename = './annotations/data_train.txt'
 custom_classname = './annotations/data_classes.txt'
 log_dir = './log_dir/'
-anchors_path = keras_path + 'model_data/yolo_anchors.txt'
-weights_path = keras_path + 'yolov3.h5'
+anchors_path = keras_yolo3_path + 'model_data/yolo_anchors.txt'
+weights_path = keras_yolo3_path + 'yolov3.h5'
 
 if __name__ == "__main__":
     class_names = get_classes(custom_classname)
