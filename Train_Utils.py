@@ -63,7 +63,7 @@ def create_model(
     num_classes,
     load_pretrained=True,
     freeze_body=2,
-    weights_path="keras_yolo3/yolo_v3.h5",
+    weights_path="keras_yolo3/model_data/yolo_weights.h5",
 ):
     """create the training model"""
     K.clear_session()  # get a new session
@@ -125,7 +125,7 @@ def create_tiny_model(
     num_classes,
     load_pretrained=True,
     freeze_body=2,
-    weights_path="keras_yolo3/tiny_yolo_v3.h5",
+    weights_path="keras_yolo3/model_data/tiny_yolo_weights.h5",
 ):
     """create the training model, for Tiny YOLOv3"""
     K.clear_session()  # get a new session
