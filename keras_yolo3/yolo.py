@@ -15,9 +15,10 @@ from PIL import Image, ImageFont, ImageDraw
 from .yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from .yolo3.utils import letterbox_image
 import os
-# from tensorflow.keras.utils import multi_gpu_model
+# from tensorflow.keras.utils import multi_gpu_model    #not work on Colab
 import tensorflow.compat.v1 as tf
-import tensorflow.python.keras.backend as K
+# import tensorflow.python.keras.backend as K           #raise FailedPreconditionError
+import tensorflow.compat.v1.keras.backend as K
 
 tf.disable_eager_execution()
 
