@@ -110,7 +110,7 @@ if __name__ == "__main__":
     )
 
     # Make classes file
-    classes_filename = os.path.join(voc_xml_path, "data_classes.txt")
+    classes_filename = "data_classes.txt"
 
     file = open(classes_filename, "w")
 
