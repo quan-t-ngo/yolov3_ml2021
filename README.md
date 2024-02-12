@@ -37,7 +37,7 @@ Students can finetune the yolov3 model to recognize objects with a custom datase
 
 <span style="color:#222222">\[2\] Lin TY\, Maire M\, </span>  <span style="color:#222222">Belongie</span>  <span style="color:#222222"> S\, Hays J\, </span>  <span style="color:#222222">Perona</span>  <span style="color:#222222"> P\, Ramanan D\, </span>  <span style="color:#222222">Dollár</span>  <span style="color:#222222"> P\, </span>  <span style="color:#222222">Zitnick</span>  <span style="color:#222222"> CL\. Microsoft coco: Common objects in context\. </span>  <span style="color:#222222">InEuropean</span>  <span style="color:#222222"> conference on computer vision 2014 Sep 6 \(pp\. 740\-755\)\. Springer\, Cham\.</span>
 
-<span style="color:#222222">\[3\] https://github.com/datitran/raccoon\_dataset</span>
+<span style="color:#222222">\[3\] https://github.com/datitran/raccoon_dataset</span>
 
 # Yolov3 Architecture
 
