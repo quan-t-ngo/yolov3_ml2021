@@ -23,19 +23,19 @@ The raccoon dataset used in this tutorial belongs to https://github.com/datitran
 * Part 5: Link Google Drive
 * Part 6: Define variables and callbacks
 * Part 7: Finetune yolov3 model using raccoon dataset
-* Part 8: Test the model\.
+* Part 8: Test the model.
 
 # 
 
 # Purpose
 
-Help students get familiar with object detection using the yolov3 model \[1\] that was pre-trained on a large COCO dataset \[2\]\.
+Help students get familiar with object detection using the yolov3 model \[1\] that was pre-trained on a large COCO dataset \[2\].
 
-Students can finetune the yolov3 model to recognize objects with a custom dataset \(e\.g\.\, raccoon dataset \[3\]\) using Google Colab\.
+Students can finetune the yolov3 model to recognize objects with a custom dataset \(e.g.\, raccoon dataset \[3\]\) using Google Colab.
 
-<span style="color:#222222">\[1\] Redmon J\, Farhadi A\. Yolov3: An incremental improvement\. </span>  <span style="color:#222222">arXiv</span>  <span style="color:#222222"> preprint arXiv:1804\.02767\. 2018 Apr 8\.</span>
+<span style="color:#222222">\[1\] Redmon J\, Farhadi A. Yolov3: An incremental improvement. </span>  <span style="color:#222222">arXiv</span>  <span style="color:#222222"> preprint arXiv:1804.02767. 2018 Apr 8.</span>
 
-<span style="color:#222222">\[2\] Lin TY\, Maire M\, </span>  <span style="color:#222222">Belongie</span>  <span style="color:#222222"> S\, Hays J\, </span>  <span style="color:#222222">Perona</span>  <span style="color:#222222"> P\, Ramanan D\, </span>  <span style="color:#222222">Dollár</span>  <span style="color:#222222"> P\, </span>  <span style="color:#222222">Zitnick</span>  <span style="color:#222222"> CL\. Microsoft coco: Common objects in context\. </span>  <span style="color:#222222">InEuropean</span>  <span style="color:#222222"> conference on computer vision 2014 Sep 6 \(pp\. 740\-755\)\. Springer\, Cham\.</span>
+<span style="color:#222222">\[2\] Lin TY\, Maire M\, </span>  <span style="color:#222222">Belongie</span>  <span style="color:#222222"> S\, Hays J\, </span>  <span style="color:#222222">Perona</span>  <span style="color:#222222"> P\, Ramanan D\, </span>  <span style="color:#222222">Dollár</span>  <span style="color:#222222"> P\, </span>  <span style="color:#222222">Zitnick</span>  <span style="color:#222222"> CL. Microsoft coco: Common objects in context. </span>  <span style="color:#222222">InEuropean</span>  <span style="color:#222222"> conference on computer vision 2014 Sep 6 \(pp. 740\-755\). Springer\, Cham.</span>
 
 <span style="color:#222222">\[3\] https://github.com/datitran/raccoon_dataset</span>
 
@@ -51,23 +51,23 @@ Students can finetune the yolov3 model to recognize objects with a custom datase
 
 # Darknet-53
 
-Darknet\-53 is used as a feature extractor\.
+Darknet\-53 is used as a feature extractor.
 
-Darknet\-53 is mainly composed of 3 x 3 and 1 x 1 filters with skip connections like the residual network in ResNet\.
+Darknet\-53 is mainly composed of 3 x 3 and 1 x 1 filters with skip connections like the residual network in ResNet.
 
 ![](img/Object_Detection_with_Yolov31.png)
 
 # Dataset
 
-* In this project\, raccoon dataset \[1\] is used to finetune the yolov3 model\.
+* In this project\, raccoon dataset \[1\] is used to finetune the yolov3 model.
 * About the raccoon dataset:
   * Number of classes: 1
   * Number of images: 200
-  * Annotation file format: Pascal VOC XML \(\.xml\)
+  * Annotation file format: Pascal VOC XML \(.xml\)
 
 ![](img/CObject_Detection_with_Yolov32.png)
 
-<span style="color:#222222">\[1\] </span>  <span style="color:#222222">https://github\.com/datitran/raccoon\_dataset</span>
+<span style="color:#222222">\[1\] </span>  <span style="color:#222222">https://github.com/datitran/raccoon_dataset</span>
 
 <span style="color:#292934"> __Log in and start __ </span>  <span style="color:#292934"> __jupyter__ </span>  <span style="color:#292934"> __ notebook__ </span>
 
@@ -97,9 +97,9 @@ Password:
 
 # Download and convert yolov3 pretrained weight
 
-The Yolov3 model in this project is trained using Darknet library\, thus the pre\-trained weights is in Darknet format \(\.weights\)
+The Yolov3 model in this project is trained using Darknet library\, thus the pre\-trained weights is in Darknet format \(.weights\)
 
-We need to convert the pre\-trained weight into \.h5 file that can be used by TensorFlow Keras\.
+We need to convert the pre\-trained weight into .h5 file that can be used by TensorFlow Keras.
 
 ![](img/Object_Detection_with_Yolov35.png)
 
@@ -131,7 +131,7 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 <span style="color:#FF0000">Images folder path \+ filename</span>
 
-<span style="color:#FF0000">\./images/ \+ raccoon\-1\.jpg</span>
+<span style="color:#FF0000">./images/ \+ raccoon\-1.jpg</span>
 
 # data_classes.txt
 
@@ -181,9 +181,9 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # Finetune stage 2
 
-<span style="color:#212121">Unfreeze and continue training\, to fine\-tune\.</span>
+<span style="color:#212121">Unfreeze and continue training\, to fine\-tune.</span>
 
-<span style="color:#212121">Train longer if the result is unsatisfactory\.</span>
+<span style="color:#212121">Train longer if the result is unsatisfactory.</span>
 
 # Re-compile and continue to train model
 
@@ -215,13 +215,13 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 ![](img/Object_Detection_with_Yolov323.png)
 
-[https://download\-all\-images\.mobilefirst\.me](https://download-all-images.mobilefirst.me/)
+[https://download\-all\-images.mobilefirst.me](https://download-all-images.mobilefirst.me/)
 
 # Annotate images
 
 ![](img/Object_Detection_with_Yolov324.png)
 
-    * [https://www\.makesense\.ai/](https://www.makesense.ai/)
+    * [https://www.makesense.ai/](https://www.makesense.ai/)
 
 # Upload images
 
