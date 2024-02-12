@@ -37,7 +37,7 @@ Students can finetune the yolov3 model to recognize objects with a custom datase
 
 <span style="color:#FF0000">53 more convolutional layers</span>
 
-![](img%5CObject_Detection_with_Yolov30.png)
+![](img/CObject_Detection_with_Yolov30.png)
 
 # Darknet-53
 
