@@ -19,7 +19,7 @@
 
 # Purpose
 
-Help students get familiar with object detection using yolov3 model \[1\] that was pre\-trained on a large COCO dataset \[2\]\.
+Help students get familiar with object detection using the yolov3 model \[1\] that was pre-trained on a large COCO dataset \[2\]\.
 
 Students can finetune the yolov3 model to recognize objects with a custom dataset \(e\.g\.\, raccoon dataset \[3\]\) using Google Colab\.
 
@@ -27,7 +27,7 @@ Students can finetune the yolov3 model to recognize objects with a custom datase
 
 <span style="color:#222222">\[2\] Lin TY\, Maire M\, </span>  <span style="color:#222222">Belongie</span>  <span style="color:#222222"> S\, Hays J\, </span>  <span style="color:#222222">Perona</span>  <span style="color:#222222"> P\, Ramanan D\, </span>  <span style="color:#222222">Dollár</span>  <span style="color:#222222"> P\, </span>  <span style="color:#222222">Zitnick</span>  <span style="color:#222222"> CL\. Microsoft coco: Common objects in context\. </span>  <span style="color:#222222">InEuropean</span>  <span style="color:#222222"> conference on computer vision 2014 Sep 6 \(pp\. 740\-755\)\. Springer\, Cham\.</span>
 
-<span style="color:#222222">\[3\] https://github\.com/datitran/raccoon\_dataset</span>
+<span style="color:#222222">\[3\] https://github.com/datitran/raccoon\_dataset</span>
 
 # Yolov3 Architecture
 
@@ -37,7 +37,7 @@ Students can finetune the yolov3 model to recognize objects with a custom datase
 
 <span style="color:#FF0000">53 more convolutional layers</span>
 
-![](img/CObject_Detection_with_Yolov30.png)
+![](img/Object_Detection_with_Yolov30.png)
 
 # Darknet-53
 
@@ -45,7 +45,7 @@ Darknet\-53 is used as a feature extractor\.
 
 Darknet\-53 is mainly composed of 3 x 3 and 1 x 1 filters with skip connections like the residual network in ResNet\.
 
-![](img%5CObject_Detection_with_Yolov31.png)
+![](img/Object_Detection_with_Yolov31.png)
 
 # Dataset
 
@@ -55,7 +55,7 @@ Darknet\-53 is mainly composed of 3 x 3 and 1 x 1 filters with skip connections 
   * Number of images: 200
   * Annotation file format: Pascal VOC XML \(\.xml\)
 
-![](img%5CObject_Detection_with_Yolov32.png)
+![](img/CObject_Detection_with_Yolov32.png)
 
 <span style="color:#222222">\[1\] </span>  <span style="color:#222222">https://github\.com/datitran/raccoon\_dataset</span>
 
@@ -79,7 +79,7 @@ Password:
 
 # Download project materials
 
-![](img/CObject_Detection_with_Yolov34.png)
+![](img/Object_Detection_with_Yolov34.png)
 
 <span style="color:#292934"> __Part 2: Download and convert yolov3 pretrained weight__ </span>
 
@@ -91,9 +91,9 @@ The Yolov3 model in this project is trained using Darknet library\, thus the pre
 
 We need to convert the pre\-trained weight into \.h5 file that can be used by TensorFlow Keras\.
 
-![](img%5CObject_Detection_with_Yolov35.png)
+![](img/Object_Detection_with_Yolov35.png)
 
-![](img%5CObject_Detection_with_Yolov36.png)
+![](img/Object_Detection_with_Yolov36.png)
 
 <span style="color:#292934"> __Part 3:  download and preprocess experimental dataset__ </span>
 
@@ -101,21 +101,21 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # Download the experimental dataset
 
-![](img%5CObject_Detection_with_Yolov37.png)
+![](img/Object_Detection_with_Yolov37.png)
 
 # Preprocess dataset
 
-![](img%5CObject_Detection_with_Yolov38.png)
+![](img/Object_Detection_with_Yolov38.png)
 
 # Example of a Pascal VOC XML file
 
-![](img%5CObject_Detection_with_Yolov39.png)
+![](img/Object_Detection_with_Yolov39.png)
 
 <span style="color:#FF0000">Information we need</span>
 
 # Example of Yolo format file
 
-![](img%5CObject_Detection_with_Yolov310.png)
+![](img/Object_Detection_with_Yolov310.png)
 
 <span style="color:#FF0000">xmin</span>  <span style="color:#FF0000">\, </span>  <span style="color:#FF0000">ymin</span>  <span style="color:#FF0000">\, </span>  <span style="color:#FF0000">xmax</span>  <span style="color:#FF0000">\, </span>  <span style="color:#FF0000">ymax</span>  <span style="color:#FF0000">\, class</span>
 
@@ -125,7 +125,7 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # data_classes.txt
 
-![](img%5CObject_Detection_with_Yolov311.png)
+![](img/Object_Detection_with_Yolov311.png)
 
 <span style="color:#292934"> __Part 4:  Import libraries and pre\-defined functions__ </span>
 
@@ -133,7 +133,7 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # Import libraries and pre-defined functions
 
-![](img%5CObject_Detection_with_Yolov312.png)
+![](img/Object_Detection_with_Yolov312.png)
 
 <span style="color:#292934"> __Part 5:  Define variables and Callbacks__ </span>
 
@@ -141,11 +141,11 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # Variables
 
-![](img%5CObject_Detection_with_Yolov313.png)
+![](img/Object_Detection_with_Yolov313.png)
 
 # Callbacks
 
-![](img%5CObject_Detection_with_Yolov314.png)
+![](img/Object_Detection_with_Yolov314.png)
 
 <span style="color:#292934"> __Part 6:  Finetune yolov3 model using raccoon dataset__ </span>
 
@@ -157,17 +157,17 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # Split data
 
-![](img%5CObject_Detection_with_Yolov315.png)
+![](img/Object_Detection_with_Yolov315.png)
 
 # Create and Compile model
 
-![](img%5CObject_Detection_with_Yolov316.png)
+![](img/Object_Detection_with_Yolov316.png)
 
-![](img%5CObject_Detection_with_Yolov317.png)
+![](img/Object_Detection_with_Yolov317.png)
 
 # Train model
 
-![](img%5CObject_Detection_with_Yolov318.png)
+![](img/Object_Detection_with_Yolov318.png)
 
 # Finetune stage 2
 
@@ -177,7 +177,7 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # Re-compile and continue to train model
 
-![](img%5CObject_Detection_with_Yolov319.png)
+![](img/Object_Detection_with_Yolov319.png)
 
 <span style="color:#292934"> __Part 8: Test the model__ </span>
 
@@ -185,61 +185,61 @@ We need to convert the pre\-trained weight into \.h5 file that can be used by Te
 
 # Load the trained model
 
-![](img%5CObject_Detection_with_Yolov320.png)
+![](img/Object_Detection_with_Yolov320.png)
 
 # Testing function
 
-![](img%5CObject_Detection_with_Yolov321.png)
+![](img/Object_Detection_with_Yolov321.png)
 
 # Test the model
 
-![](img%5CObject_Detection_with_Yolov322.png)
+![](img/Object_Detection_with_Yolov322.png)
 
 <span style="color:#292934"> __Create Custom dataset Tutorial__ </span>
 
 # 
 
-# Download a batch of images from google images search
+# Download a batch of images from Google Images search
 
 <span style="color:#FF0000">Download all images extension</span>
 
-![](img%5CObject_Detection_with_Yolov323.png)
+![](img/Object_Detection_with_Yolov323.png)
 
 [https://download\-all\-images\.mobilefirst\.me](https://download-all-images.mobilefirst.me/)
 
 # Annotate images
 
-![](img%5CObject_Detection_with_Yolov324.png)
+![](img/Object_Detection_with_Yolov324.png)
 
     * [https://www\.makesense\.ai/](https://www.makesense.ai/)
 
 # Upload images
 
-![](img%5CObject_Detection_with_Yolov325.png)
+![](img/Object_Detection_with_Yolov325.png)
 
-![](img%5CObject_Detection_with_Yolov326.png)
+![](img/Object_Detection_with_Yolov326.png)
 
 # Start project
 
-![](img%5CObject_Detection_with_Yolov327.png)
+![](img/Object_Detection_with_Yolov327.png)
 
 # Add label
 
-![](img%5CObject_Detection_with_Yolov328.png)
+![](img/Object_Detection_with_Yolov328.png)
 
 <span style="color:#FF0000">Actions > Edit Labels</span>
 
-![](img%5CObject_Detection_with_Yolov329.png)
+![](img/Object_Detection_with_Yolov329.png)
 
 # Annotate all images
 
-![](img%5CObject_Detection_with_Yolov330.png)
+![](img/Object_Detection_with_Yolov330.png)
 
 # Export Annotations
 
-![](img%5CObject_Detection_with_Yolov331.png)
+![](img/Object_Detection_with_Yolov331.png)
 
 <span style="color:#FF0000">Actions > Export Annotations</span>
 
-![](img%5CObject_Detection_with_Yolov332.png)
+![](img/Object_Detection_with_Yolov332.png)
 
