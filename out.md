@@ -19,9 +19,9 @@
 
 # Purpose
 
-Help student get familiar with object detection using yolov3 model \[1\] that was pre\-trained on a large COCO dataset \[2\]\.
+Help students get familiar with object detection using yolov3 model \[1\] that was pre\-trained on a large COCO dataset \[2\]\.
 
-Students are able to finetune the yolov3 model to recognize object with a custom dataset \(e\.g\.\, raccoon dataset \[3\]\) using Google Colab\.
+Students can finetune the yolov3 model to recognize objects with a custom dataset \(e\.g\.\, raccoon dataset \[3\]\) using Google Colab\.
 
 <span style="color:#222222">\[1\] Redmon J\, Farhadi A\. Yolov3: An incremental improvement\. </span>  <span style="color:#222222">arXiv</span>  <span style="color:#222222"> preprint arXiv:1804\.02767\. 2018 Apr 8\.</span>
 
@@ -43,14 +43,14 @@ Students are able to finetune the yolov3 model to recognize object with a custom
 
 Darknet\-53 is used as a feature extractor\.
 
-Darknet\-53 mainly composed of 3 x 3 and 1 x 1 filters with skip connections like the residual network in ResNet\.
+Darknet\-53 is mainly composed of 3 x 3 and 1 x 1 filters with skip connections like the residual network in ResNet\.
 
 ![](img%5CObject_Detection_with_Yolov31.png)
 
 # Dataset
 
 * In this project\, raccoon dataset \[1\] is used to finetune the yolov3 model\.
-* About raccoon dataset:
+* About the raccoon dataset:
   * Number of classes: 1
   * Number of images: 200
   * Annotation file format: Pascal VOC XML \(\.xml\)
@@ -71,7 +71,7 @@ Password:
 
 # 
 
-![](img%5CObject_Detection_with_Yolov33.png)
+![](img/CObject_Detection_with_Yolov33.png)
 
 <span style="color:#FF0000">Right click \-> Open in Terminal \-> </span>  <span style="color:#FF0000">jupyter</span>  <span style="color:#FF0000"> notebook</span>
 
@@ -79,7 +79,7 @@ Password:
 
 # Download project materials
 
-![](img%5CObject_Detection_with_Yolov34.png)
+![](img/CObject_Detection_with_Yolov34.png)
 
 <span style="color:#292934"> __Part 2: Download and convert yolov3 pretrained weight__ </span>
 
@@ -89,7 +89,7 @@ Password:
 
 The Yolov3 model in this project is trained using Darknet library\, thus the pre\-trained weights is in Darknet format \(\.weights\)
 
-We need to covert the pre\-trained weight into \.h5 file that can be used by TensorFlow Keras\.
+We need to convert the pre\-trained weight into \.h5 file that can be used by TensorFlow Keras\.
 
 ![](img%5CObject_Detection_with_Yolov35.png)
 
@@ -99,7 +99,7 @@ We need to covert the pre\-trained weight into \.h5 file that can be used by Ten
 
 # 
 
-# Download experimental dataset
+# Download the experimental dataset
 
 ![](img%5CObject_Detection_with_Yolov37.png)
 
