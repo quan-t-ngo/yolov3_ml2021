@@ -7,10 +7,10 @@
   * Dataset
 * Log in and start jupyter notebook
 * Part 1: Download project materials
-* Part 2: Download and convert yolov3 pretrained weight
-* Part 3: Download and preprocess experimental dataset
+* Part 2: Download and convert yolov3 pre-trained weight
+* Part 3: Download and preprocess the experimental dataset
 * Part 4: Import libraries and pre\-defined functions
-* Part 5: Link Google drive
+* Part 5: Link Google Drive
 * Part 6: Define variables and callbacks
 * Part 7: Finetune yolov3 model using raccoon dataset
 * Part 8: Test the model\.
