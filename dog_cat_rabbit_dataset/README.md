@@ -1,2 +1,2 @@
 # dog_cat_rabbit
-A small and simple data for mini project using yolov3
+If you're looking for a beginner-friendly dataset to get started with YOLOv3 for a mini project, consider using a small and manageable collection of data.
